@@ -4,7 +4,6 @@ import { BannerContext } from "@/context/BannerContext";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
 import { CardContext } from "@/context/CardContext";
-import { wrap } from "module";
 import { useState } from "react";
 
 export default function Home() {
@@ -12,11 +11,7 @@ export default function Home() {
 
   return (
     <main>
-      <Banner
-        image={BannerContext.image}
-        title={BannerContext.title}
-        context={BannerContext.context}
-      />
+      <Banner title={BannerContext.title} context={BannerContext.context} />
       <div className='card-container'>
         {CardContext.map((card) => (
           <Card

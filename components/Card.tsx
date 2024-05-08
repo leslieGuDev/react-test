@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "./Button";
 import Image, { StaticImageData } from "next/image";
 import "@/css/card.css";

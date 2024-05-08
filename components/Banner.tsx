@@ -1,4 +1,3 @@
-import Image, { StaticImageData } from "next/image";
 import "@/css/banner.css";
 import React from "react";
 import Button from "./Button";
